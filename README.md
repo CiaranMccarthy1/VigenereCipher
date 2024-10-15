@@ -1,2 +1,4 @@
 # VigenereCipher
-Vigenere Cipher Encrypter and Decrypter In Java ☕️
+(Faulty) Vigenere Cipher Encrypter and Decrypter In Java ☕️
+
+The decrypter doesn't work.
