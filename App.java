@@ -58,7 +58,7 @@ class App{
         for (int i = 0; i < message.length(); i++) {
 
 
-            shift = key.charAt((i % key.length())) - 'z';
+            shift = key.charAt((i % key.length())) - 'a';
             char messageToChar = message.charAt(i);
             
             
