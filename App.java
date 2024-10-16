@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 class App{
 
-    //NOTE: Only the encryption part works for this. The decryption does not work!
 
     //initialising Scanner sc
     static Scanner sc = new Scanner(System.in);
@@ -70,7 +69,6 @@ class App{
         return encryptedMessage.toString();
     }
 
-    //decryption method does not work
 
     //setting up a method that handles the decryption
     public static String decrypt(String message, String key){
