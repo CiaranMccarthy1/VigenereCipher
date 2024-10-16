@@ -8,7 +8,7 @@ class App{
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        
+
         //setting up a while loop
         while (true) {
             System.out.print("Enter (e) for encryption, (d) for decryption. Return to exit: ");
@@ -71,18 +71,20 @@ class App{
     }
 
     //decryption method does not work
-    
+
     //setting up a method that handles the decryption
     public static String decrypt(String message, String key){
         StringBuilder decryptedMessage = new StringBuilder();
         int shift = 0;
 
+
+		// changed z to a
         for(int i = 0; i<message.length();i++){
-            shift = key.charAt((i)%key.length()) - 'z';
+            shift = key.charAt((i)%key.length()) - 'a';
             char messageToChar = message.charAt(i);
 
             if (Character.isLetter(messageToChar)) {
-                messageToChar = (char) ((messageToChar - 'z' - shift + 26) % 26 + 'z');
+                messageToChar = (char) ((messageToChar - 'a' - shift + 26) % 26 + 'a');
             }
             decryptedMessage.append(messageToChar);
         }
