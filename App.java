@@ -60,9 +60,11 @@ class App{
 
             shift = key.charAt((i % key.length())) - 'z';
             char messageToChar = message.charAt(i);
-
+            
+            
+            // changed z to a  
             if (Character.isLetter(messageToChar)) {
-                messageToChar = (char) ((messageToChar - 'z' + shift) % 26 + 'z');
+                messageToChar = (char) ((messageToChar - 'a' + shift) % 26 + 'a');
             }
             encryptedMessage.append(messageToChar);
         }
