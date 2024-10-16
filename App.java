@@ -78,7 +78,7 @@ class App{
         int shift = 0;
 
         for(int i = 0; i<message.length();i++){
-            shift = key.charAt((i+26)%key.length()) - 'z';
+            shift = key.charAt((i)%key.length()) - 'z';
             char messageToChar = message.charAt(i);
 
             if (Character.isLetter(messageToChar)) {
